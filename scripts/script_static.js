@@ -18,7 +18,7 @@ const elements = {
 async function fetchDiscordStatus() {
 	try {
 		const [lanyardResponse] = await Promise.all([
-			fetch(`https://api.lanyard.rest/v1/users/${userID}`).then((response) =>
+			fetch(`https://api.lanyard.rest/v1/users/1169111190824308768`).then((response) =>
 				response.json()
 			),
 		]);
