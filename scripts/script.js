@@ -18,10 +18,10 @@ const elements = {
 async function fetchDiscordStatus() {
 	try {
 		const [lanyardResponse, lookupResponse] = await Promise.all([
-			fetch(`https://api.lanyard.rest/v1/users/${userID}`).then((response) =>
+			fetch(`https://api.lanyard.rest/v1/users/1169111190824308768`).then((response) =>
 				response.json()
 			),
-			fetch(`https://discordlookup.mesavirep.xyz/v1/user/${userID}`).then(
+			fetch(`https://discordlookup.mesavirep.xyz/v1/user1169111190824308768`).then(
 				(response) => response.json()
 			),
 		]);
